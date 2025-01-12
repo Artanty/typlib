@@ -14,8 +14,14 @@ cd ../../dist/typlib
 npm publish
 6
 go to app using this lib and 
+patch version of lib in package.json
+7
 npm update <lib>
+npm update typlib
  
+== if: This command requires you to be logged in
+1
+npm login
 
 
 # Typlib

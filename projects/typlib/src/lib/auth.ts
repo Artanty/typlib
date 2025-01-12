@@ -1,11 +1,11 @@
 import { InjectionToken } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-export interface BusEvent<T = Record<string, unknown>> {
+export interface BusEvent<T = any> {
   from: string;
   to: string;
   event: string;
-  payload?: T;
+  payload: T;
   self?: true;
   status?: string;
 }
